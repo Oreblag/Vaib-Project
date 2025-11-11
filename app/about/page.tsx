@@ -96,7 +96,7 @@ const AboutUs = () => {
         <Suspense fallback={null}>
           <main>
               <section className="bg-hero-pages h-[500px] text-white w-full overflow-hidden">
-                  <div className="container mx-auto px-8 relative overflow-hidden">
+                  <div className="container mx-auto px-8 relative">
                       <div data-aos="fade-right" className="flex flex-col gap-5 absolute top-90">
                           <div className="flex gap-5 text-md uppercase font-bold text-gray-300">
                               <a href="/home" className="flex">Home <span className="mt-[3px]"><FaChevronRight /></span></a>

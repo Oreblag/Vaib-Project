@@ -32,7 +32,7 @@ const Header = () => {
   return (
     <header className="bg-white">
         <div className="w-full bg-black">
-            <div className="hearder-bar container mx-auto px-8 bg-black flex justify-space-between flex-col gap-2 py-3 sm:flex-row sm:justify-between overflow-hidden">
+            <div className="hearder-bar container mx-auto px-8 bg-black flex justify-space-between flex-col gap-2 py-3 sm:flex-row sm:justify-between overflow-x-hidden">
                 <div className="flex justify-space-between gap-2 flex-col sm:flex-row sm:gap-4">
                     <div className="flex gap-2 justify-center items-center">
                         <span>
