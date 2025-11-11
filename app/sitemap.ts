@@ -1,28 +1,28 @@
-// app/sitemap.ts
+
 import { MetadataRoute } from 'next'
 
 export default function sitemap(): MetadataRoute.Sitemap {
   return [
     {
-      url: 'https://yourcompany.com',
+      url: 'https://vaibproject.com',
       lastModified: new Date(),
       changeFrequency: 'monthly',
       priority: 1,
     },
     {
-      url: 'https://yourcompany.com/about',
+      url: 'https://vaibproject/about',
       lastModified: new Date(),
       changeFrequency: 'monthly',
       priority: 0.8,
     },
     {
-      url: 'https://yourcompany.com/services',
+      url: 'https://vaibproject/services',
       lastModified: new Date(),
       changeFrequency: 'monthly',
       priority: 0.9,
     },
     {
-      url: 'https://yourcompany.com/projects',
+      url: 'https://vaibproject/projects',
       lastModified: new Date(),
       changeFrequency: 'weekly',
       priority: 0.9,
