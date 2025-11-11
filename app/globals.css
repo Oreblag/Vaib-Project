@@ -1,0 +1,560 @@
+/* @import "tailwindcss";
+@import "tw-animate-css"; */
+
+/* @tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+
+@layer base {
+  :root {
+    --background: 0 0% 100%;
+    --foreground: 240 10% 3.9%;
+    --card: 0 0% 100%;
+    --card-foreground: 240 10% 3.9%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 240 10% 3.9%;
+    --primary: 240 5.9% 10%;
+    --primary-foreground: 0 0% 98%;
+    --secondary: 240 4.8% 95.9%;
+    --secondary-foreground: 240 5.9% 10%;
+    --muted: 240 4.8% 95.9%;
+    --muted-foreground: 240 3.8% 46.1%;
+    --accent: 240 4.8% 95.9%;
+    --accent-foreground: 240 5.9% 10%;
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 0 0% 98%;
+    --border: 240 5.9% 90%;
+    --input: 240 5.9% 90%;
+    --ring: 240 5.9% 10%;
+    --radius: 0.5rem;
+    --chart-1: 12 76% 61%;
+    --chart-2: 173 58% 39%;
+    --chart-3: 197 37% 24%;
+    --chart-4: 43 74% 66%;
+    --chart-5: 27 87% 67%;
+  }
+
+  .dark {
+    --background: 240 10% 3.9%;
+    --foreground: 0 0% 98%;
+    --card: 240 10% 3.9%;
+    --card-foreground: 0 0% 98%;
+    --popover: 240 10% 3.9%;
+    --popover-foreground: 0 0% 98%;
+    --primary: 0 0% 98%;
+    --primary-foreground: 240 5.9% 10%;
+    --secondary: 240 3.7% 15.9%;
+    --secondary-foreground: 0 0% 98%;
+    --muted: 240 3.7% 15.9%;
+    --muted-foreground: 240 5% 64.9%;
+    --accent: 240 3.7% 15.9%;
+    --accent-foreground: 0 0% 98%;
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 0 0% 98%;
+    --border: 240 3.7% 15.9%;
+    --input: 240 3.7% 15.9%;
+    --ring: 240 4.9% 83.9%;
+    --chart-1: 220 70% 50%;
+    --chart-2: 160 60% 45%;
+    --chart-3: 30 80% 55%;
+    --chart-4: 280 65% 60%;
+    --chart-5: 340 75% 55%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-white text-gray-600;
+    font-family: "Roboto", sans-serif;
+  }
+  .bg-primary {
+    background-color: #c9a442 !important;
+  }
+}
+@layer components{
+  .bg-hero{
+    background-image: url('https://ext.same-assets.com/3457767499/2552898611.jpeg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+} */
+
+@import "tailwindcss";
+@import "tw-animate-css";
+
+/* @tailwind base; */
+/* @tailwind components; */
+@tailwind utilities;
+
+* {
+  user-select: none;
+}
+
+@layer base {
+  :root {
+    --background: 0 0% 100%;
+    --foreground: 240 10% 3.9%;
+    --card: 0 0% 100%;
+    --card-foreground: 240 10% 3.9%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 240 10% 3.9%;
+    --primary: 240 5.9% 10%;
+    --primary-foreground: 0 0% 98%;
+    --secondary: 240 4.8% 95.9%;
+    --secondary-foreground: 240 5.9% 10%;
+    --muted: 240 4.8% 95.9%;
+    --muted-foreground: 240 3.8% 46.1%;
+    --accent: 240 4.8% 95.9%;
+    --accent-foreground: 240 5.9% 10%;
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 0 0% 98%;
+    --border: 240 5.9% 90%;
+    --input: 240 5.9% 90%;
+    --ring: 240 5.9% 10%;
+    --radius: 0.5rem;
+    --chart-1: 12 76% 61%;
+    --chart-2: 173 58% 39%;
+    --chart-3: 197 37% 24%;
+    --chart-4: 43 74% 66%;
+    --chart-5: 27 87% 67%;
+  }
+
+  .dark {
+    --background: 240 10% 3.9%;
+    --foreground: 0 0% 98%;
+    --card: 240 10% 3.9%;
+    --card-foreground: 0 0% 98%;
+    --popover: 240 10% 3.9%;
+    --popover-foreground: 0 0% 98%;
+    --primary: 0 0% 98%;
+    --primary-foreground: 240 5.9% 10%;
+    --secondary: 240 3.7% 15.9%;
+    --secondary-foreground: 0 0% 98%;
+    --muted: 240 3.7% 15.9%;
+    --muted-foreground: 240 5% 64.9%;
+    --accent: 240 3.7% 15.9%;
+    --accent-foreground: 0 0% 98%;
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 0 0% 98%;
+    --border: 240 3.7% 15.9%;
+    --input: 240 3.7% 15.9%;
+    --ring: 240 4.9% 83.9%;
+    --chart-1: 220 70% 50%;
+    --chart-2: 160 60% 45%;
+    --chart-3: 30 80% 55%;
+    --chart-4: 280 65% 60%;
+    --chart-5: 340 75% 55%;
+  }
+}
+
+@layer base {
+  * {
+    border-color: hsl(var(--border));
+  }
+  body {
+    background-color: hsl(var(--background));
+    color: hsl(var(--foreground));
+    font-family: "Roboto", Arial, sans-serif;
+  }
+}
+
+@layer components {
+  .bg-primary {
+    background-color: #c9a442 !important;
+  }
+  
+  /* .bg-hero {
+    background-image: url('https://ext.same-assets.com/3457767499/2552898611.jpeg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  } */
+
+  .bg-hero {
+    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('https://ext.same-assets.com/3457767499/2552898611.jpeg') no-repeat 50% 0% fixed;
+    /* background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat; */
+  }
+
+  
+}
+
+
+@media (min-width: 320px) {}
+@media (min-width: 375px) {}
+@media (min-width: 460px) {}
+@media (min-width: 768px) {}
+@media (min-width: 1024px) {}
+@media (min-width: 1440px) {}
+@media (min-width: 2560px) {}
+
+
+/* header */
+.header-socialbtn {
+  background-color: grey !important;
+  cursor: pointer !important;
+}
+.header-inq-btn {
+  background-color: purple !important;
+  text-transform: uppercase !important;
+  color: white !important;
+  cursor: pointer !important;
+}
+
+@media (min-width: 320px) {
+  .inq-btn-span {
+    left: 33% !important
+  }
+}
+
+@media (min-width: 360px) {
+  .inq-btn-span {
+    left: 33% !important
+  }
+}
+
+@media (min-width: 375px) {
+  .inq-btn-span {
+    left: 35% !important
+  }
+}
+
+@media (min-width: 390px) {
+  .inq-btn-span {
+    left: 36% !important
+  }
+}
+
+@media (min-width: 420px) {
+  .inq-btn-span {
+    left: 36% !important
+  }
+  
+}
+
+@media (min-width: 428px) {
+  .inq-btn-span {
+    left: 38% !important
+  }
+}
+
+@media (min-width: 768px) {
+  .inq-btn-span {
+    left: 15% !important
+  }
+}
+
+.nav-itm-lnk:hover {
+  background-color: purple !important;
+  cursor: pointer !important;
+} 
+
+
+/* features */
+.feat-b2g {
+  background: 6A3093;
+  background: linear-gradient(315deg, rgba(0, 0, 0, 1) 0%, rgba(106, 48, 147, 1) 80%);
+}
+
+.feat-bg {
+  background: #CBD5E1;
+  background: linear-gradient(315deg, rgba(203, 213, 225, 1) 0%, rgba(243, 244, 246, 1) 100%);
+}
+
+/* about */
+.about-wr:after {
+  position: absolute !important;
+  top: 0 !important;
+  left: 0 !important;
+  content: ' ' !important;
+  width: 0 !important;
+  height: 0 !important;
+  border-style: solid !important;
+  border-width: 120px 120px 0 0 !important;
+  border-color: #581c87 transparent transparent transparent !important;
+}
+
+/* promo */
+.bg-promo {
+  background-image: url('https://ontopbuilders.com/images/bg_2.jpg') !important;
+  background-size: cover !important;
+  background-position: center center !important;
+  background-repeat: no-repeat !important;
+  background-blend-mode: darken !important;
+  background-color: rgba(0, 0, 0, 0.781) !important;
+}
+
+/* services */
+.bg-services {
+  z-index: 0;
+}
+.bg-services:after {
+  position: absolute !important;
+  top: 50% !important;
+  left: 0 !important;
+  right: 0 !important;
+  content: ' ' !important;
+  width: 100% !important;
+  height: 50% !important;
+  background: #f3f5f665 !important;
+  z-index: -1 !important;
+}
+
+.service-card {
+  box-shadow: 0px -6px 7px -4px rgba(0,0,0,0.08);
+-webkit-box-shadow: 0px -6px 7px -4px rgba(0,0,0,0.08);
+-moz-box-shadow: 0px -6px 7px -4px rgba(0,0,0,0.08);
+}
+
+/* cta */
+.cta-bg {
+  z-index: 0 !important;
+  background-image: url('https://ontopbuilders.com/images/about-3.jpg') !important;
+  background-size: cover !important;
+  background-position: center center !important;
+  background-repeat: no-repeat !important;
+}
+
+@media (min-width: 768px) {
+  .cta-bg {
+    background-image: none !important;
+    background-blend-mode: darken !important;
+    background-color: black !important;
+  };
+  .cta-bg:after {
+    position: absolute !important;
+    top: 0 !important;
+    left: 50% !important;
+    right: 0 !important;
+    content: ' ' !important;
+    width: 50% !important;
+    height: 100% !important;
+    background-color: black !important;
+    z-index: -1 !important;
+    background-image: url('https://ontopbuilders.com/images/about-3.jpg') !important;
+    background-size: cover !important;
+    background-position: center center !important;
+    background-repeat: no-repeat !important;
+  }
+}
+
+
+/* testimonial */
+
+/* .bg-testimonial:after {
+  position: absolute !important;
+  top: 50% !important;
+  left: 0 !important;
+  right: 0 !important;
+  content: ' ' !important;
+  width: 100% !important;
+  height: 50% !important;
+  background: rgb(5, 15, 32) !important;
+  z-index: -1 !important;
+} */
+
+@media (min-width: 768px) {
+  .bg-testimonial:after {
+      position: absolute !important;
+      top: 0 !important;
+      left: 50% !important;
+      bottom: 0px !important;
+      content: "" !important;
+      width: 50% !important;
+      height: 100% !important;
+      background: rgb(5, 15, 32) !important;
+      z-index: -1 !important;
+  }
+  
+}
+
+/* footer */
+
+/* .aside-stretch:before {
+  position: absolute !important;
+  top: 0 !important;
+  right: 100px !important;
+  content: ' ' !important;
+  width: 100px !important;
+  height: 100% !important;
+  background: #1b202d !important;
+  z-index: -1 !important;
+  transform: matrix(1, 0, 0.9, 1, 150, 0) !important;
+} */
+
+/* .aside-stretch:after {
+  position: absolute !important;
+  top: 0 !important;
+  right: 100% !important;
+  bottom: 0 !important;
+  content: ' ' !important;
+  background:#1b202d !important;
+  
+} */
+
+@media (min-width: 768px) {
+  .aside-stretch:after {
+    position: absolute !important;
+    top: 0 !important;
+    right: 100% !important;
+    bottom: 0 !important;
+    content: ' ' !important;
+    width: 360% !important;
+    background:#581c87 !important;
+  }
+
+  .aside-stretch:before {
+    position: absolute !important;
+    top: 0 !important;
+    right: 100px !important;
+    content: ' ' !important;
+    width: 100px !important;
+    height: 100% !important;
+    background: #1b202d !important;
+    z-index: -1 !important;
+    transform: matrix(1, 0, 0.9, 1, 150, 0) !important;
+  }
+}
+
+/* other page hero */
+
+.bg-hero-pages {
+  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('https://ontopbuilders.com/images/bg_2.jpg') no-repeat 50% 0% fixed;
+  background-blend-mode: darken !important;
+  background-color: rgba(0, 0, 0, 0.468) !important;
+}
+
+/* flip card */
+
+.flip-card {
+  background-color: transparent;
+  width: 400px;
+  height: 400px;
+  perspective: 1000px;
+  color: white;
+  margin-bottom: 20px;
+}
+
+@media (min-width: 768px) {
+  .flip-card {
+    width: 300px;
+    height: 400px
+  }
+  
+}
+@media (min-width: 1024px) {
+  .flip-card {
+    width: 250px;
+    height: 300px
+  }
+  
+}
+@media (min-width: 1440px) {
+  .flip-card {
+    width: 300px;
+    height: 400px
+  }
+  
+}
+@media (min-width: 2560px) {
+  .flip-card {
+    width: 400px;
+    height: 400px
+  }
+  
+}
+
+
+
+
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-card-front, .flip-card-back {
+  box-shadow: 0 8px 14px 0 rgba(0,0,0,0.2);
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  border-radius: 3px;
+}
+
+.flip-card-front {
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 2px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -1px 0px inset;
+}
+
+.flip-card-back {
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 2px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -1px 0px inset;
+  background-color: #581c87;
+  transform: rotateY(180deg);
+}
+
+
+/* Form Dialog */
+
+.dia-title {
+  font-size: 19px;
+  color: #581c87;
+  font-weight: 600;
+  letter-spacing: -1px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  padding-left: 30px;
+}
+
+.dia-title:before,.dia-title:after {
+  position: absolute !important;
+  content: "";
+  height: 16px;
+  width: 16px;
+  border-radius: 50%;
+  left: 1px;
+  background-color: #c084fc;
+}
+
+.dia-title:before {
+  width: 20px;
+  height: 20px;
+  left: 0px;
+  background-color: #581c87;
+}
+
+.dia-title:after {
+  width: 18px;
+  height: 18px;
+  animation: pulse 1s linear infinite !important;
+}
+
+@keyframes pulse {
+  from {
+    transform: scale(0.9);
+    opacity: 1;
+  }
+
+  to {
+    transform: scale(1.8);
+    opacity: 0;
+  }
+}
