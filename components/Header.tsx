@@ -31,8 +31,8 @@ import Form from "@/components/Form";
 const Header = () => {
   return (
     <header className="bg-white">
-        <div className="w-full bg-black overflow-hidden">
-            <div className="container mx-auto px-8 bg-black flex justify-space-between flex-col gap-2 py-3 sm:flex-row sm:justify-between sm:gap-40 overflow-hidden">
+        <div className="w-full bg-black">
+            <div className="hearder-bar container mx-auto px-8 bg-black flex justify-space-between flex-col gap-2 py-3 sm:flex-row sm:justify-between overflow-hidden">
                 <div className="flex justify-space-between gap-2 flex-col sm:flex-row sm:gap-4">
                     <div className="flex gap-2 justify-center items-center">
                         <span>
@@ -70,7 +70,7 @@ const Header = () => {
         </div>
 
         <div className="bg-white w-full">
-            <div className="container mx-auto px-8 bg-white flex justify-space-between flex-col gap-2 py-10 sm:flex-row sm:justify-between sm:gap-10">
+            <div className="contact-cont container mx-auto px-8 bg-white flex justify-space-between flex-col gap-2 py-10 sm:flex-row sm:justify-between sm:gap-10">
             
                 <div data-aos="fade-right" className="flex mb-3 gap-3 sm:gap-2">
                     <span className="w-14">

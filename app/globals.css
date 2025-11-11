@@ -245,9 +245,39 @@
   }
 }
 
+@media (min-width: 640px) {
+   /* .header-inq-btn {
+    width: 40px
+  } */
+  /* .inq-btn-span {
+    left: 3% !important;
+    font-size: 7px;
+  } */
+   .hearder-bar {
+    flex-direction: column;
+
+   }
+  .contact-cont {
+    flex-direction: column !important;
+    gap: 5px;
+  }
+}
+
 @media (min-width: 768px) {
+  /* .header-inq-btn {
+    width: 160px
+  } */
+  .hearder-bar {
+    flex-direction: row !important;
+    gap: 163px
+  } 
   .inq-btn-span {
-    left: 15% !important
+    left: 15% !important;
+    font-size: 16px
+  }
+  .contact-cont {
+    flex-direction: row !important;
+    gap: 40px;
   }
 }
 
