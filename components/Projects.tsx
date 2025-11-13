@@ -13,6 +13,8 @@ const projects = [
     title: 'RCCG Destiny Sanctuary',
     icon: <MapPin size={13} fill='#581c87'/>,
     location: 'Egbeda, Lagos, Nigeria',
+    description: 'A modern church building designed to accommodate over 2000 worshippers with state-of-the-art facilities and acoustic design.',
+    supervisor: 'Engr. Michael Adeyemi'
   },
   {
     image: {
@@ -22,6 +24,8 @@ const projects = [
     title: 'De Prince Supermarket',
     icon: <MapPin size={15} fill='#581c87'/>,
     location: 'Lekki, Lagos, Nigeria',
+    description: 'A premium shopping destination featuring modern retail architecture, efficient space planning, and customer-friendly layout.',
+    credit: 'Arc. Sarah Johnson'
   },
   {
     image: {
@@ -31,6 +35,8 @@ const projects = [
     title: 'Maryland Catholic Sec. School',
     icon: <MapPin size={15} fill='#581c87'/>,
     location: 'Maryland, Lagos, Nigeria',
+    description: 'Educational facility designed to provide optimal learning environments with modern classrooms and recreational areas.',
+    credit: 'Engr. David Okoro'
   },
   {
     image: {
@@ -40,6 +46,8 @@ const projects = [
     title: 'Prince Ebeano Supermarket',
     icon: <MapPin size={15} fill='#581c87'/>,
     location: 'Lekki, Lagos, Nigeria',
+    description: 'Contemporary retail space designed for optimal customer flow and product display with emphasis on shopper experience.',
+    credit: 'Arc. Femi Balogun'
   },
   {
     image: {
@@ -49,6 +57,8 @@ const projects = [
     title: 'Magboro Mall',
     icon: <MapPin size={15} fill='#581c87'/>,
     location: 'Magboro, Ogun State, Nigeria',
+    description: 'Shopping mall complex featuring multiple retail outlets, food court, and ample parking space for customers.',
+    credit: 'Engr. Chinedu Nwosu'
   },
   {
     image: {
@@ -58,6 +68,8 @@ const projects = [
     title: 'RCCG Maryland',
     icon: <MapPin size={15} fill='#581c87'/>,
     location: 'Maryland, Lagos, Nigeria',
+    description: 'Sacred space designed with architectural excellence, combining traditional worship elements with modern comfort.',
+    credit: 'Arc. Grace Williams'
   },
 ];
 
@@ -83,7 +95,7 @@ const Projects = () => {
   };
 
   return (
-    <section className="py-20 mb-10 bg-white overflow-hidden">
+    <section className="pt-20 pb-30 bg-white overflow-hidden">
       <div className="container mx-auto px-8">
         <div data-aos="fade-down" className="text-center mb-20">
           <h2 className="text-sm text-purple-900 font-bold text-primary mb-2 uppercase">Our Work catalog</h2>
@@ -103,7 +115,7 @@ const Projects = () => {
               onClick={() => openModal(index)}
               data-aos="fade-down"
             >
-              {/* Pop-up button */}
+              {/* Pop-up button - only shows on parent hover */}
               <Button 
                 className="flex mx-auto text-white text-4xl font-bold justify-center items-center mt-20 w-[70px] h-[70px] rounded-[2%] bg-purple-900 shadow-2xl hover:bg-purple-800 cursor-pointer opacity-0 group-hover:opacity-100 transition-opacity duration-300"
                 onClick={(e) => {
@@ -114,38 +126,78 @@ const Projects = () => {
                 +
               </Button>
               
-              {/* Description card */}
+              {/* Description card - has its own hover effects */}
               <div 
-                className="descr-card absolute left-0 right-0 bottom-[-75px] mx-auto bg-white w-[80%] p-4 shadow-lg rounded-[2%] group-hover:bg-purple-900 group-hover:text-white transition-colors duration-300"
+                className="descr-card absolute left-0 right-0 bottom-[-75px] mx-auto bg-white w-[80%] p-4 shadow-lg rounded-[2%] transition-colors duration-300"
                 onMouseEnter={(e) => {
-                  e.currentTarget.closest('.group')?.classList.add('force-hover');
+                  // Add hover class to this specific descr-card
+                  e.currentTarget.classList.add('descr-card-hover');
                 }}
                 onMouseLeave={(e) => {
-                  e.currentTarget.closest('.group')?.classList.remove('force-hover');
+                  // Remove hover class from this specific descr-card
+                  e.currentTarget.classList.remove('descr-card-hover');
                 }}
                 onClick={(e) => {
                   e.stopPropagation();
                 }}
               >
-                <h1 className='text-purple-900 text-sm font-bold rounded-[2%] p-2 mb-2 bg-zinc-200 w-fit group-hover:bg-white group-hover:text-purple-900 transition-colors duration-300'>
-                  {project.category}
-                </h1>
-                <h4 className="text-sm font-bold text-gray-800 mb-2 mx-auto uppercase break-word group-hover:text-white transition-colors duration-300">
-                  {project.title}
-                </h4>
-                <div className="flex gap-1 justify-start items-center">
-                  <span className="group-hover:text-white transition-colors duration-300">
-                    <MapPin size={15} fill='#581c87' className="group-hover:fill-white transition-colors duration-300" />
-                  </span>
-                  <p className="text-gray-600 text-[12px] group-hover:text-white transition-colors duration-300">
-                    {project.location}
+                {/* Default content (shown when not hovering descr-card) */}
+                <div className="default-content">
+                  <h1 className='text-purple-900 text-sm font-bold rounded-[2%] p-2 mb-2 bg-zinc-200 w-fit'>
+                    {project.category}
+                  </h1>
+                  <h4 className="text-sm font-bold text-gray-800 mb-2 mx-auto uppercase break-word">
+                    {project.title}
+                  </h4>
+                  <div className="flex gap-1 justify-start items-center">
+                    <span>
+                      <MapPin size={15} fill='#581c87' />
+                    </span>
+                    <p className="text-gray-600 text-[12px]">
+                      {project.location}
+                    </p>
+                  </div>
+                </div>
+
+                {/* Hover content (shown when hovering descr-card) */}
+                <div className="hover-content hidden">
+                  <p className="text-[12px] mb-3 leading-relaxed text-gray-800">
+                    {project.description}
                   </p>
+                  <div className="border-t border-gray-300 pt-2">
+                    <p className="text-[11px] font-semibold text-gray-800">
+                      Project Credits:
+                    </p>
+                    <p className="text-[12px] text-gray-700">
+                      {project.credit}
+                    </p>
+                  </div>
                 </div>
               </div>
 
               <style jsx>{`
-                .group.force-hover .opacity-0 {
-                  opacity: 100;
+                /* Show hover content and change background when descr-card is hovered */
+                .descr-card-hover {
+                  background-color: #581c87 !important;
+                  color: white;
+                }
+                
+                .descr-card-hover .default-content {
+                  display: none;
+                }
+                
+                .descr-card-hover .hover-content {
+                  display: block;
+                }
+                
+                .descr-card-hover .text-gray-800,
+                .descr-card-hover .text-gray-700,
+                .descr-card-hover .text-gray-600 {
+                  color: white !important;
+                }
+                
+                .descr-card-hover .border-gray-300 {
+                  border-color: rgba(255, 255, 255, 0.3) !important;
                 }
               `}</style>
             </div>
@@ -233,6 +285,14 @@ const Projects = () => {
                 <span className="text-purple-900 text-sm font-bold rounded-[2%] p-2 bg-zinc-200 w-fit">
                   {projects[currentProjectIndex].category}
                 </span>
+                <div className="mt-3">
+                  <p className="text-gray-700 text-sm">
+                    {projects[currentProjectIndex].description}
+                  </p>
+                  <p className="text-gray-600 text-sm mt-2">
+                    <span className="font-semibold">Credits:</span> {projects[currentProjectIndex].credit}
+                  </p>
+                </div>
               </div>
             </div>
           </div>

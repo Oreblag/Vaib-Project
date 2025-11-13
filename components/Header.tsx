@@ -126,14 +126,14 @@ const Header = () => {
                             <SheetTitle>
                                 <NavigationMenu className="text-slate-200">
                                     <NavigationMenuList className="flex flex-col gap-4 mt-4">
-                                        <NavigationMenuItem>
+                                        <NavigationMenuItem className="-ms-4">
                                             <NavigationMenuLink asChild className=''>
                                                 <a href="/" className="font-bold text-slate-200  
                                                 ">HOME</a>
                                             </NavigationMenuLink>
                                         </NavigationMenuItem>
                                         
-                                        <NavigationMenuItem>
+                                        <NavigationMenuItem className="-ms-1">
                                             <NavigationMenuLink asChild className="">
                                                 <a href="/about">ABOUT</a>
                                             </NavigationMenuLink>
@@ -143,9 +143,14 @@ const Header = () => {
                                                 <a href="/services" className="font-bold  ms-1">SERVICES</a>
                                             </NavigationMenuLink>
                                         </NavigationMenuItem>
-                                        <NavigationMenuItem className="ms-3">
+                                        <NavigationMenuItem className="ms-6">
                                             <NavigationMenuLink asChild className="">
                                                 <a href="/projects">PROJECTS</a>
+                                            </NavigationMenuLink>
+                                        </NavigationMenuItem>
+                                        <NavigationMenuItem className="-ms-3">
+                                            <NavigationMenuLink asChild className="">
+                                                <a href="/teams">TEAMS</a>
                                             </NavigationMenuLink>
                                         </NavigationMenuItem>
                                     </NavigationMenuList>
@@ -165,7 +170,7 @@ const Header = () => {
         </div>
 
         <div className="hidden lg:block relative bg-white w-full">
-            <div className="container mx-auto bg-black absolute top-[-20] left-9 z-1 w-[93%] xl:left-29 xl:w-[84%] 2xl:left-135 2xl:w-[57.5%]">
+            <div className="large-nav-bar container mx-auto bg-black absolute top-[-20] left-9 z-1 w-[93%] xl:left-29 xl:w-[84%] 2xl:left-135 2xl:w-[57.5%]">
             <NavigationMenu>
                 <NavigationMenuList>
                     <NavigationMenuItem className="nav-itm-lnk p-3">
@@ -186,6 +191,11 @@ const Header = () => {
                     <NavigationMenuItem className="nav-itm-lnk ms-3 p-3 block">
                         <NavigationMenuLink asChild className="font-bold text-slate-200">
                             <Link href="/projects">PROJECTS</Link>
+                        </NavigationMenuLink>
+                    </NavigationMenuItem>
+                    <NavigationMenuItem className="nav-itm-lnk ms-3 p-3 block">
+                        <NavigationMenuLink asChild className="font-bold text-slate-200">
+                            <Link href="/teams">TEAMS</Link>
                         </NavigationMenuLink>
                     </NavigationMenuItem>
                 </NavigationMenuList>

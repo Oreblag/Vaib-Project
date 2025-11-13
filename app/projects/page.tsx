@@ -19,7 +19,7 @@ const VaibProjects = () => {
     return (
         <DelayedSuspense delay={4000}>
         <Suspense fallback={null}>
-            <main>
+            <main className="bg-black">
                 <section className="bg-hero-pages h-[500px] text-white w-full overflow-hidden">
                     <div className="container mx-auto px-8 relative">
                         <div data-aos="fade-right" className="flex flex-col gap-5 absolute top-90">

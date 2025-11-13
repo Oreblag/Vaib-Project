@@ -224,7 +224,7 @@ const Form = () => {
 
           <DialogFooter className="mt-6">
             <Button 
-              className="bg-gradient-to-r from-indigo-500 to-purple-900 text-white font-bold py-2 px-4 uppercase rounded-md w-full hover:bg-indigo-600 hover:to-purple-950 transition ease-in-out duration-150 cursor-pointer" 
+              className="bg-linear-to-r from-indigo-500 to-purple-900 text-white font-bold py-2 px-4 uppercase rounded-md w-full hover:bg-indigo-600 hover:to-purple-950 transition ease-in-out duration-150 cursor-pointer" 
               type="submit" 
               disabled={isSubmitting}
             >

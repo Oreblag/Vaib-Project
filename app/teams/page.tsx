@@ -1,23 +1,49 @@
 import { Suspense } from 'react';
 import DelayedSuspense from '@/components/DelayedSuspense';
 import Image from "next/image";
-import CTA from "@/components/CTA";
-import Promo from "@/components/Promo";
-import About from "@/components/About";
 import type { Metadata } from "next";
 import { FaChevronRight } from "react-icons/fa";
-import Testimonials from "@/components/Testimonials";
 
-export const metadata: Metadata = {
-  title: 'About Us | Vaib Project Limited',
-  description: 'With over 10 years of excellence in construction and engineering, we deliver innovative building solutions. Learn about our commitment to quality, safety, and sustainable construction practices.',
-  keywords: 'construction company about, building contractors, engineering firm history, construction expertise, building company team, construction experience, engineering professionals, construction management, building solutions, construction quality, construction safety, sustainable building',
+export const metadata = {
+  title: 'Our Team | Vaib Project Limited',
+  description: 'Meet the talented team behind Vaib Project Limited. Learn about our experts, leadership, and the people driving innovation forward.',
+  keywords: 'team, employees, leadership, experts, staff, professionals, company team, about us',
+  authors: [{ name: 'Vaib Project Limited' }],
   openGraph: {
-    title: 'About Our Construction Company',
-    description: 'Leading building and engineering construction experts with decades of experience in delivering quality projects.',
+    title: 'Our Team | Vaib Project Limited',
+    description: 'Meet the talented team behind Vaib Project Limited. Get to know our experts and leadership.',
+    url: 'https://vaibproject.com/teams',
+    siteName: 'Vaib Project Limited',
+    images: [
+      {
+        url: '/images/team-og.jpg',
+        width: 1200,
+        height: 630,
+        alt: 'Vaib Project Team',
+      },
+    ],
+    locale: 'en_US',
     type: 'website',
   },
-};
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Our Team | Vaib Project Limited',
+    description: 'Meet the talented team behind Vaib Project Limited.',
+    images: ['/images/team-twitter.jpg'],
+  },
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      'max-video-preview': -1,
+      'max-image-preview': 'large',
+      'max-snippet': -1,
+    },
+  },
+}
+
 
 const teams = [
   { 
@@ -89,7 +115,9 @@ const teams = [
 ];
 
 
-const AboutUs = () => {
+
+
+const Teams = () => {
     return (
 
       <DelayedSuspense delay={4000}>
@@ -100,19 +128,15 @@ const AboutUs = () => {
                       <div data-aos="fade-right" className="flex flex-col gap-5 absolute top-90">
                           <div className="flex gap-5 text-md uppercase font-bold text-gray-300">
                               <a href="/home" className="flex">Home <span className="mt-[3px]"><FaChevronRight /></span></a>
-                              <a href="#" className="flex">About Us <span className="mt-[3px]"><FaChevronRight /></span></a>
+                              <a href="#" className="flex">Our Team <span className="mt-[3px]"><FaChevronRight /></span></a>
                           </div>
-                          <h2 className="text-5xl text-gray-200 uppercase font-bold">About Us</h2>
+                          <h2 className="text-5xl text-gray-200 uppercase font-bold">Our Team</h2>
                       </div>
                   </div>
               </section>
-          </main>
-          <main>    
-              <About />
-              <Promo />
-              <CTA  />
-              <section>
-                  <div className="container mx-auto px-8 mb-20 overflow-hidden">
+
+              <section className='bg-white'>
+                  <div className="container mx-auto px-8 pb-20 overflow-hidden">
                       <div className="text-center pt-8 mt-20">
                           <p data-aos="fade-up" className="uppercase text-sm text-purple-900 mb-5  text-center font-bold">Our Team</p>
                           <h2 data-aos="fade-down" className="text-xl md:text-2xl lg:text-3xl text-center mb-10 text-black font-bold">Our Team</h2>
@@ -153,7 +177,7 @@ const AboutUs = () => {
                       </div>
                   </div>
               </section>
-              <Testimonials />
+
           </main>
           
         </Suspense>
@@ -162,4 +186,4 @@ const AboutUs = () => {
     );
 };
 
-export default AboutUs;
+export default Teams;

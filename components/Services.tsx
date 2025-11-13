@@ -50,9 +50,9 @@ const services = [
       height: 30,
     },
     icon: <ArchitectIcon fill="#581c87" />,
-    title: "Project Management & Procurement",
+    title: "Project Management",
     description:
-      "Our project management and procurement approach is second to none in the industry",
+      "Our project management and project approach is second to none in the industry",
   },
   {
     image: {
@@ -61,9 +61,9 @@ const services = [
       height: 30,
     },
     icon: <CraneIcon fill="#581c87" />,
-    title: "International Trade Logistics",
+    title: "General Supplies & Procurement",
     description:
-      "We provide best in both world class foreign trade and international and local trade logistic services",
+      "General Supplies and Procurement delivering quality products and efficient procurement solutions for construction and infrastructure projects and businesses across mutiple sectors",
   },
   {
     image: {
