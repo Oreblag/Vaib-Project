@@ -14,7 +14,7 @@ const projects = [
     icon: <MapPin size={13} fill='#581c87'/>,
     location: 'Egbeda, Lagos, Nigeria',
     description: 'A modern church building designed to accommodate over 2000 worshippers with state-of-the-art facilities and acoustic design.',
-    supervisor: 'Engr. Michael Adeyemi'
+    credit: 'Engr. Michael Adeyemi'
   },
   {
     image: {
