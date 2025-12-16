@@ -30,6 +30,17 @@ const projects = [
   },
   {
     image: {
+      src: "/images/project-lekki1.jpg"
+    },
+    category: 'Proposed Building',
+    title: 'Residential Building Model',
+    icon: <MapPin size={15} fill='#581c87'/>,
+    location: 'Lekki, Lagos State, Nigeria',
+    description: 'Residential building with modern design, efficient space planning, and customer-friendly layout in construction.',
+    credit: 'Vaib Project Limited'
+  },
+  {
+    image: {
       src: '/images/project-3.jpg'
     },
     category: 'Supermarket',
@@ -49,17 +60,6 @@ const projects = [
     location: 'Lekki, Lagos, Nigeria',
     description: 'Contemporary retail space designed for optimal customer flow and product display with emphasis on shopper experience.',
     credit: 'In Partnership with ONTOP BUILDERS LTD'
-  },
-  {
-    image: {
-      src: "/images/project-lekki1.jpg"
-    },
-    category: 'Proposed Building',
-    title: 'Residential Building Model',
-    icon: <MapPin size={15} fill='#581c87'/>,
-    location: 'Lekki, Lagos State, Nigeria',
-    description: 'Residential building with modern design, efficient space planning, and customer-friendly layout in construction.',
-    credit: 'Vaib Project Limited'
   },
   {
     image: {
