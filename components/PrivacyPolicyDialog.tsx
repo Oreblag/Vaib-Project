@@ -22,7 +22,7 @@ export default function PrivacyPolicyDialog() {
           Privacy Policy
         </Button>
       </DialogTrigger>
-      <DialogContent className="max-w-4xl max-h-[95vh] bg-white">
+      <DialogContent className="max-w-4xl max-h-[98vh] bg-white">
         <DialogHeader>
           <DialogTitle className="text-2xl font-bold text-gray-800">
             Privacy Policy
@@ -310,8 +310,8 @@ export default function PrivacyPolicyDialog() {
         </ScrollArea>
 
         <div className="flex justify-between items-center pt-4 border-t">
-          <p className="text-sm text-gray-600">
-            By using our services, you acknowledge reading this Privacy Policy
+          <p className="text-[10px] md:text-sm text-gray-600">
+            By using our services, you acknowledge reading this Privacy Policy.
           </p>
           <div className="flex gap-2">
             <Button className="cursor-pointer" variant="outline" asChild>

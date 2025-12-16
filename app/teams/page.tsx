@@ -88,7 +88,7 @@ const teams = [
     name: "Engr. Coker Oladiran",
     position: "Partner/Project Supervisor",
     description:
-      "A Goal Driven and target oriented executive with systematic approach and more than nine (9) years of Experience in Construction Management and International trade/Logistics management. He Possesses an excellent cross functional management skill including a superior grasp on technical areas of Building and civil engineering work.",
+      "Passionate and Goal-driven individual with 9+ years’ of experience in construction management, techniques and international trade/logistics, with strong cross-functional leadership and technical expertise in building and civil engineering.",
   },
   
 ];

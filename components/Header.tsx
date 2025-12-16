@@ -92,7 +92,7 @@ const Header = () => {
                     </span>
                     <p className="text-zinc-500 text-[12px] sm:whitespace-nowrap">
                         <span className="font-bold text-purple-900">
-                            For Calls: <span className="font-bold text-black">+234 816 081 7698</span> <br />
+                            For Calls: <span className="font-bold text-black">+234 703 621 5972</span> <br />
                         </span>
                         Call Us Now 24/7 Customer Support
                     </p>
