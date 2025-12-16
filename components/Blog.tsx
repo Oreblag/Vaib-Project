@@ -8,14 +8,14 @@ import { HiMiniCalendarDateRange } from "react-icons/hi2";
 
 const blogPosts = [
   {
-    image: 'https://ext.same-assets.com/3457767499/551293283.jpeg',
+    image: '/images/blog-1.jpeg',
     date: 'Sept. 06, 2020',
     author: 'Admin',
     comments: 3,
     title: 'We place high value on safety of life & properties',
   },
   {
-    image: 'https://ext.same-assets.com/3457767499/531992198.jpeg',
+    image: '/images/blog-2.jpeg',
     date: 'Sept. 06, 2020',
     author: 'Admin',
     comments: 3,

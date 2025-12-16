@@ -48,70 +48,49 @@ export const metadata = {
 const teams = [
   { 
     image: {
-      src: "https://ontopbuilders.com/images/services-1.jpg",
+      src: "/images/oni.jpg",
       
     },
     
-    name: "Olusaola Mathew Orikoku",
+    name: "Engr. Oluwole Oni",
     position: "Managing Director",
     description:
-      "A Goal Driven and target oriented executive with systematic approach and more than fiften (15) years of Experience in Construction Management and International trade/Logistics management. He Possesses an excellent cross functional management skill including a superior grasp on technical areas of Building and civil engineering work.",
+      "A Talented and Goal Driven, target oriented executive with systematic approach and more than ten (10) years of Experience in Construction Management and International trade/Logistics management. He Possesses an excellent cross functional management skill including a superior grasp on technical areas of Building and civil engineering work.",
   },
   {
     image: {
-      src: "https://ontopbuilders.com/images/services-2.jpg",
+      src: "/images/segun.jpg",
       
     },
     
-    name: "Salawudee Kayum Adeshola",
-    position: "Managing Director",
+    name: "Oluwasegun David Olawumi",
+    position: "Partner/Project Coordinator",
     description:
-      "A Goal Driven and target oriented executive with systematic approach and more than fiften (15) years of Experience in Construction Management and International trade/Logistics management. He Possesses an excellent cross functional management skill including a superior grasp on technical areas of Building and civil engineering work.",
+      "Segun Olawumi is a Civil Engineer with 9 years’ construction experience in building technology, earthworks, and construction management.Have been involved in remarkable sand dredging and land reclamation project around the world. Currently a Project Planner at PCL Construction, Winnipeg; and also a member of Engineers and Geoscientists Manitoba..",
   },
   {
     image: {
-      src: "https://ontopbuilders.com/images/services-3.jpg",
+      src: "/images/solomon.jpg",
       
     },
     
-    name: "Olusaola Mathew Orikoku",
-    position: "Managing Director",
+    name: "Solomon Oluwasegun Orepitan",
+    position: "Cost Analyst/Project Manager",
     description:
-      "A Goal Driven and target oriented executive with systematic approach and more than fiften (15) years of Experience in Construction Management and International trade/Logistics management. He Possesses an excellent cross functional management skill including a superior grasp on technical areas of Building and civil engineering work.",
+      "Quantity Surveyor and Certified Project Manager with nearly 10 years’ experience across consulting, construction, and banking sector, shows strong expertise in cost management, project delivery, and commercial leadership. University of Lagos graduate; full member of NIQS, MQSi, PMI, and Associate Member of RICS.",
   },
   {
     image: {
-      src: "https://ontopbuilders.com/images/services-4.jpg",
+      src: "/images/coker.jpg",
       
     },
     
-    name: "Olusaola Mathew Orikoku",
-    position: "Managing Director",
+    name: "Engr. Coker Oladiran",
+    position: "Partner/Project Supervisor",
     description:
-      "A Goal Driven and target oriented executive with systematic approach and more than fiften (15) years of Experience in Construction Management and International trade/Logistics management. He Possesses an excellent cross functional management skill including a superior grasp on technical areas of Building and civil engineering work.",
+      "A Goal Driven and target oriented executive with systematic approach and more than nine (9) years of Experience in Construction Management and International trade/Logistics management. He Possesses an excellent cross functional management skill including a superior grasp on technical areas of Building and civil engineering work.",
   },
-  {
-    image: {
-      src: "https://ontopbuilders.com/images/services-5.jpg",
-      
-    },
-    
-    name: "Olusaola Mathew Orikoku",
-    position: "Managing Director",
-    description:
-      "A Goal Driven and target oriented executive with systematic approach and more than fiften (15) years of Experience in Construction Management and International trade/Logistics management. He Possesses an excellent cross functional management skill including a superior grasp on technical areas of Building and civil engineering work.",
-  },
-  {
-    image: {
-      src: "https://ontopbuilders.com/images/services-6.jpg",
-      
-    },
-    
-    name: "Olusaola Mathew Orikoku",
-    position: "Managing Director",
-    description:
-      "A Goal Driven and target oriented executive with systematic approach and more than fiften (15) years of Experience in Construction Management and International trade/Logistics management. He Possesses an excellent cross functional management skill including a superior grasp on technical areas of Building and civil engineering work.",
-  },
+  
 ];
 
 
@@ -143,7 +122,7 @@ const Teams = () => {
                           <div className="p-4 bg-white">
                               <div className="flex flex-wrap shrink justify-center items-center gap-5">
                                   {teams.map((team, index) => (
-                                      <div data-aos="fade-down" className="flip-card"
+                                      <div data-aos="fade-down" className="flip-card cursor-pointer"
                                           key={index}>
                                           <div className="flip-card-inner">
                                               <div className="flip-card-front " style={{ backgroundImage: `url(${team.image.src})`, backgroundSize: "cover", backgroundPosition: "center",
@@ -154,13 +133,13 @@ const Teams = () => {
                                                   </div>
                                               </div>
                                               <div className="flip-card-back bg-purple-900 px-3">
-                                                  <p className="text-sm sm:text-[17px] md:text-[17px] lg:text-[13px] xl:text-[17px]">{team.description}</p>
+                                                  <p className="text-sm sm:text-[8px] md:text-[14px] lg:text-[13px] xl:text-[14px]">{team.description}</p>
                                                   <div className="flex gap-3 mt-8">
                                                       <Image 
                                                       src={team.image.src}
                                                       alt={team.name}
                                                       width={50} 
-                                                      height={50}
+                                                      height={20}
                                                       className="object-cover rounded-sm" />
                                                       <div className="text-start">
                                                           <h4 className="text-md font-bold text-gray-100">{team.name}</h4>

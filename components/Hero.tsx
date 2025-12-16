@@ -8,9 +8,9 @@ const Hero = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
 
     const images = [
-    'https://ext.same-assets.com/3457767499/2552898611.jpeg',
-    'https://ontopbuilders.com/images/services-3.jpg',
-    'https://ext.same-assets.com/3457767499/147576343.jpeg',
+    '/images/building-cons4.jpg',
+    '/images/project-4.jpg',
+    '/images/building-cons2.jpg',
   ];
 
   useEffect(() => {

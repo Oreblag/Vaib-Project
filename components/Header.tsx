@@ -34,14 +34,14 @@ const Header = () => {
         <div className="w-full bg-black">
             <div className="hearder-bar container mx-auto px-8 bg-black flex justify-space-between flex-col gap-2 py-3 sm:flex-row sm:justify-between overflow-x-hidden">
                 <div className="flex justify-space-between gap-2 flex-col sm:flex-row sm:gap-4">
-                    <div className="flex gap-2 justify-center items-center">
+                    <a href="mailto:info@vaibproject.com" className="flex gap-2 justify-center items-center">
                         <span>
                             <GrSend color="purple" size={25} />
                         </span>
                         <p className="text-slate-100">
                             info@vaibproject.com
                         </p>
-                    </div>
+                    </a >
                     <div className="flex gap-1 justify-center align-center">
                         <Button className="header-socialbtn rounded-full border bg-slate-700 p-2">
                             <FaFacebookF color="purple" size={18} />

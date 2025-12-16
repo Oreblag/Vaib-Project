@@ -12,7 +12,7 @@ import HammerIcon from "./icons/HammerIcon";
 const services = [
   { 
     image: {
-      src: "https://ontopbuilders.com/images/services-1.jpg",
+      src: "/images/building-cons1.jpg",
       width: 30,
       height: 30,
     },
@@ -23,7 +23,7 @@ const services = [
   },
   {
     image: {
-      src: "https://ontopbuilders.com/images/services-2.jpg",
+      src: "/images/services-2.jpg",
       width: 30,
       height: 30,
     },
@@ -34,7 +34,7 @@ const services = [
   },
   {
     image: {
-      src: "https://ontopbuilders.com/images/services-3.jpg",
+      src: "/images/services-3.jpg",
       width: 30,
       height: 30,
     },
@@ -45,7 +45,7 @@ const services = [
   },
   {
     image: {
-      src: "https://ontopbuilders.com/images/services-4.jpg",
+      src: "/images/services-4.jpg",
       width: 30,
       height: 30,
     },
@@ -56,7 +56,7 @@ const services = [
   },
   {
     image: {
-      src: "https://ontopbuilders.com/images/services-5.jpg",
+      src: "/images/services-5.jpg",
       width: 30,
       height: 30,
     },
@@ -67,7 +67,7 @@ const services = [
   },
   {
     image: {
-      src: "https://ontopbuilders.com/images/services-6.jpg",
+      src: "/images/building-cons6.jpg",
       width: 30,
       height: 30,
     },
@@ -85,7 +85,7 @@ const Services = () => {
         <div data-aos="fade-up" className="text-center mb-25">
           <h2 className="text-sm font-bold text-purple-900 mb-2 uppercase">Our Services</h2>
           <h3 className="text-2xl md:text-4xl font-bold text-gray-800 whitespace-nowrap">
-            We Offer Services
+            Services We Offer 
           </h3>
         </div>
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-15 p-2 mb-8">

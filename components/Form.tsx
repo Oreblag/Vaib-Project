@@ -29,6 +29,7 @@ const Form = () => {
   const [formData, setFormData] = useState({
     firstName: '',
     lastName: '',
+    email: '',
     phone: '',
     service: '',
     message: ''
@@ -64,7 +65,7 @@ const Form = () => {
     e.preventDefault();
 
     // Validate all required fields
-    if (!formData.firstName || !formData.lastName || !formData.phone || !formData.service || !formData.message) {
+    if (!formData.firstName || !formData.lastName || !formData.email || !formData.phone || !formData.service || !formData.message) {
       toast.error('Please fill in all required fields');
       return;
     }
@@ -99,6 +100,7 @@ const Form = () => {
         setFormData({ 
           firstName: '', 
           lastName: '', 
+          email: '', 
           phone: '', 
           service: '', 
           message: '' 
@@ -158,6 +160,18 @@ const Form = () => {
               id="lastName" 
               name="lastName" 
               value={formData.lastName} 
+              onChange={handleChange} 
+              required 
+              disabled={isSubmitting} 
+            />
+
+            <Input 
+              placeholder="Email" 
+              className="bg-gray-100 text-gray-800 border-0 rounded-md p-2 focus:bg-gray-200 focus:outline-none focus:ring-1 focus:ring-purple-900 transition ease-in-out duration-150" 
+              type="text" 
+              id="email" 
+              name="email" 
+              value={formData.email} 
               onChange={handleChange} 
               required 
               disabled={isSubmitting} 

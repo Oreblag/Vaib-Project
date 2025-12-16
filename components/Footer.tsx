@@ -1,6 +1,7 @@
 import { Facebook, Twitter, Instagram, MapPin, Phone, Mail } from 'lucide-react';
 
 import { FaChevronRight } from "react-icons/fa";
+import PrivacyPolicyDialog from './PrivacyPolicyDialog';
 
 const Footer = () => {
   return (
@@ -28,6 +29,10 @@ const Footer = () => {
             <li className="flex items-center mb-3 cursor-pointer">
               <FaChevronRight className="mr-2"/>  
             <a href="/services" className="hover:text-white">Services</a>
+            </li>
+            <li className="flex items-center mb-3 cursor-pointer">
+              <FaChevronRight className="mr-2"/>  
+            <PrivacyPolicyDialog />
             </li>
           </ul>
         </div>

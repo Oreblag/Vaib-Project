@@ -4,72 +4,73 @@ import { MapPin, X } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { useState } from 'react';
 
+
 const projects = [
   {
     image: {
-      src: "https://ext.same-assets.com/3457767499/257645877.jpeg"
+      src: '/images/project-1.jpg',
     },
-    category: 'Church Building',
-    title: 'RCCG Destiny Sanctuary',
+    category: 'Residential Building',
+    title: ' A Five Bedroom Duplex',
     icon: <MapPin size={13} fill='#581c87'/>,
-    location: 'Egbeda, Lagos, Nigeria',
-    description: 'A modern church building designed to accommodate over 2000 worshippers with state-of-the-art facilities and acoustic design.',
-    credit: 'Engr. Michael Adeyemi'
+    location: 'Jericho GRA, Ibadan, Nigeria',
+    description: 'A modern residential building designed to accommodate with five bedrooms and baths for a luxurious lifestyle with state-of-the-art facilities and acoustic design.',
+    credit: 'Vaib Project Limited'
   },
   {
     image: {
-      src: "https://ext.same-assets.com/3457767499/4269802378.jpeg"
+      src: '/images/project-2.jpg'
     },
-    category: 'Supermarket',
-    title: 'De Prince Supermarket',
+    category: 'Residential Building',
+    title: 'The Havens Apartments',
     icon: <MapPin size={15} fill='#581c87'/>,
-    location: 'Lekki, Lagos, Nigeria',
-    description: 'A premium shopping destination featuring modern retail architecture, efficient space planning, and customer-friendly layout.',
-    credit: 'Arc. Sarah Johnson'
+    location: 'Jericho, Ibadan, Nigeria',
+    description: 'A premium residential building featuring modern architecture designed for longterm living and shortlets for rentals, efficient space planning, and customer-friendly layout.',
+    credit: 'Vaib Project Limited'
   },
   {
     image: {
-      src: "https://ext.same-assets.com/3457767499/3288026530.jpeg"
-    },
-    category: 'School Building',
-    title: 'Maryland Catholic Sec. School',
-    icon: <MapPin size={15} fill='#581c87'/>,
-    location: 'Maryland, Lagos, Nigeria',
-    description: 'Educational facility designed to provide optimal learning environments with modern classrooms and recreational areas.',
-    credit: 'Engr. David Okoro'
-  },
-  {
-    image: {
-      src: "https://ext.same-assets.com/3457767499/2808532192.jpeg"
+      src: '/images/project-3.jpg'
     },
     category: 'Supermarket',
     title: 'Prince Ebeano Supermarket',
     icon: <MapPin size={15} fill='#581c87'/>,
-    location: 'Lekki, Lagos, Nigeria',
-    description: 'Contemporary retail space designed for optimal customer flow and product display with emphasis on shopper experience.',
-    credit: 'Arc. Femi Balogun'
+    location: 'Beach Resort Road, Lagos, Nigeria',
+    description: 'Shopping mall complex featuring multiple retail outlets, food court, and ample parking space for customers.',
+    credit: 'In Partnership with ONTOP BUILDERS LTD'
   },
   {
     image: {
-      src: "https://ext.same-assets.com/3457767499/2656573388.jpeg"
+      src: '/images/project-4.jpg'
     },
     category: 'Supermarket',
-    title: 'Magboro Mall',
+    title: 'Royal Prince Supermarket',
     icon: <MapPin size={15} fill='#581c87'/>,
-    location: 'Magboro, Ogun State, Nigeria',
-    description: 'Shopping mall complex featuring multiple retail outlets, food court, and ample parking space for customers.',
-    credit: 'Engr. Chinedu Nwosu'
+    location: 'Lekki, Lagos, Nigeria',
+    description: 'Contemporary retail space designed for optimal customer flow and product display with emphasis on shopper experience.',
+    credit: 'In Partnership with ONTOP BUILDERS LTD'
   },
   {
     image: {
-      src: "https://ext.same-assets.com/3457767499/2327935262.jpeg"
+      src: "/images/3d-model2.jpeg"
     },
-    category: 'Church Building',
-    title: 'RCCG Maryland',
+    category: 'Under Construction',
+    title: 'Residential Building',
     icon: <MapPin size={15} fill='#581c87'/>,
-    location: 'Maryland, Lagos, Nigeria',
-    description: 'Sacred space designed with architectural excellence, combining traditional worship elements with modern comfort.',
-    credit: 'Arc. Grace Williams'
+    location: 'Gbagada, Lagos State, Nigeria',
+    description: 'Residential building with modern design, efficient space planning, and customer-friendly layout in construction.',
+    credit: 'Vaib Project Limited'
+  },
+  {
+    image: {
+      src: "/images/3D-model.webp"
+    },
+    category: 'Under Construction',
+    title: 'Proposed Building',
+    icon: <MapPin size={15} fill='#581c87'/>,
+    location: 'Lekki, Lagos, Nigeria',
+    description: 'Industrial space designed with architectural excellence, combining industrial and residential elements with modern comfort.',
+    credit: 'Vaib Project Limited'
   },
 ];
 
@@ -117,7 +118,7 @@ const Projects = () => {
             >
               {/* Pop-up button - only shows on parent hover */}
               <Button 
-                className="flex mx-auto text-white text-4xl font-bold justify-center items-center mt-20 w-[70px] h-[70px] rounded-[2%] bg-purple-900 shadow-2xl hover:bg-purple-800 cursor-pointer opacity-0 group-hover:opacity-100 transition-opacity duration-300"
+                className="flex mx-auto text-white text-4xl font-bold justify-center items-center mt-20 w-[60px] h-[60px] rounded-[2%] bg-purple-900 shadow-2xl hover:bg-purple-800 cursor-pointer opacity-0 group-hover:opacity-100 transition-opacity duration-300"
                 onClick={(e) => {
                   e.stopPropagation(); 
                   openModal(index);
@@ -143,12 +144,15 @@ const Projects = () => {
               >
                 {/* Default content (shown when not hovering descr-card) */}
                 <div className="default-content">
-                  <h1 className='text-purple-900 text-sm font-bold rounded-[2%] p-2 mb-2 bg-zinc-200 w-fit'>
+                  {/* <h1 className='text-purple-900 text-sm font-bold rounded-[2%] p-2 mb-2 bg-zinc-200 w-fit'>
                     {project.category}
-                  </h1>
-                  <h4 className="text-sm font-bold text-gray-800 mb-2 mx-auto uppercase break-word">
+                  </h1> */}
+                  <h1 className='text-gray-800 text-sm font-bold pt-2 mb-2  w-fit uppercase'>
                     {project.title}
-                  </h4>
+                  </h1>
+                  {/* <h4 className="text-sm font-bold text-gray-800 mb-2 mx-auto uppercase break-word">
+                    {project.title}
+                  </h4> */}
                   <div className="flex gap-1 justify-start items-center">
                     <span>
                       <MapPin size={15} fill='#581c87' />
@@ -166,7 +170,7 @@ const Projects = () => {
                   </p>
                   <div className="border-t border-gray-300 pt-2">
                     <p className="text-[11px] font-semibold text-gray-800">
-                      Project Credits:
+                      Credits:
                     </p>
                     <p className="text-[12px] text-gray-700">
                       {project.credit}

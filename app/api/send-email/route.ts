@@ -5,12 +5,12 @@ export async function POST(request: Request) {
   try {
     // Parse the request body
     const body = await request.json();
-    const { firstName, lastName, phone, service, message } = body;
+    const { firstName, lastName, email, phone, service, message } = body;
 
-    console.log('Received form data:', { firstName, lastName, phone, service, message });
+    console.log('Received form data:', { firstName, lastName, email, phone, service, message });
 
     // Basic validation
-    if (!firstName || !lastName || !phone || !service || !message) {
+    if (!firstName || !lastName || !email || !phone || !service || !message) {
       return NextResponse.json(
         { message: 'All fields are required' },
         { status: 400 }
@@ -72,6 +72,10 @@ export async function POST(request: Request) {
             </tr>
             <tr>
               <td style="padding: 12px; border: 1px solid #ddd; font-weight: bold; background-color: #f9f9f9;">Phone:</td>
+              <td style="padding: 12px; border: 1px solid #ddd;">${email}</td>
+            </tr>
+            <tr>
+              <td style="padding: 12px; border: 1px solid #ddd; font-weight: bold; background-color: #f9f9f9;">Phone:</td>
               <td style="padding: 12px; border: 1px solid #ddd;">${phone}</td>
             </tr>
             <tr>
@@ -94,6 +98,7 @@ export async function POST(request: Request) {
         
         First Name: ${firstName}
         Last Name: ${lastName}
+        Email: ${email}
         Phone: ${phone}
         Service: ${serviceLabel}
         
