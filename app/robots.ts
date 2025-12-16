@@ -1,0 +1,18 @@
+// app/robots.txt
+
+// User-agent: *
+// Allow: /
+// Sitemap: https://vaibproject.com/sitemap.xml
+
+import { MetadataRoute } from "next";
+
+export default function robots(): MetadataRoute.Robots {
+    const baseUrl = 'https://vaibproject.com'
+    return {
+        rules: {
+            userAgent: '*',
+            allow: '/',
+        },
+        sitemap: `${baseUrl}/sitemap.xml`,
+    };
+}

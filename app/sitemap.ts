@@ -2,27 +2,28 @@
 import { MetadataRoute } from 'next'
 
 export default function sitemap(): MetadataRoute.Sitemap {
+  const baseUrl = 'https://vaibproject.com'
   return [
     {
-      url: 'https://vaibproject.com',
+      url: `${baseUrl}`,
       lastModified: new Date(),
       changeFrequency: 'monthly',
       priority: 1,
     },
     {
-      url: 'https://vaibproject/about',
+      url: `${baseUrl}/about`,
       lastModified: new Date(),
       changeFrequency: 'monthly',
       priority: 0.8,
     },
     {
-      url: 'https://vaibproject/services',
+      url: `${baseUrl}/services`,
       lastModified: new Date(),
       changeFrequency: 'monthly',
       priority: 0.9,
     },
     {
-      url: 'https://vaibproject/projects',
+      url: `${baseUrl}/projects`,
       lastModified: new Date(),
       changeFrequency: 'weekly',
       priority: 0.9,
