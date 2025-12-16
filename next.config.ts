@@ -4,22 +4,22 @@ import { use } from "react";
 
 const nextConfig: NextConfig = {
   
-  trailingSlash: false,
+  // trailingSlash: false,
 
-  env: {
-    NEXT_PUBLIC_BASE_URL: process.env.NODE_ENV === "production" ? "https://vaibproject.com" : "http://localhost:3000",
-  },
+  // env: {
+  //   NEXT_PUBLIC_BASE_URL: process.env.NODE_ENV === "production" ? "https://vaibproject.com" : "http://localhost:3000",
+  // },
 
-  async redirects() {
-    return [
-      {
-        source: "/:path*",
-        has: [{ type: "host", value: "vaibproject.com" }],
-        destination: "https://vaibproject.com/:path*",
-        permanent: true,
-      },
-    ];
-  },
+  // async redirects() {
+  //   return [
+  //     {
+  //       source: "/:path*",
+  //       has: [{ type: "host", value: "vaibproject.com" }],
+  //       destination: "https://vaibproject.com/:path*",
+  //       permanent: true,
+  //     },
+  //   ];
+  // },
 
   images: {
     unoptimized: true,

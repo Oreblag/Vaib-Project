@@ -52,21 +52,21 @@ const projects = [
   },
   {
     image: {
-      src: "/images/3d-model2.jpeg"
+      src: "/images/project-lekki1.jpg"
     },
-    category: 'Under Construction',
-    title: 'Residential Building',
+    category: 'Proposed Building',
+    title: 'Residential Building Model',
     icon: <MapPin size={15} fill='#581c87'/>,
-    location: 'Gbagada, Lagos State, Nigeria',
+    location: 'Lekki, Lagos State, Nigeria',
     description: 'Residential building with modern design, efficient space planning, and customer-friendly layout in construction.',
     credit: 'Vaib Project Limited'
   },
   {
     image: {
-      src: "/images/3D-model.webp"
+      src: "/images/project-lekki2.jpg"
     },
-    category: 'Under Construction',
-    title: 'Proposed Building',
+    category: 'Proposed Building',
+    title: 'Proposed Building Model',
     icon: <MapPin size={15} fill='#581c87'/>,
     location: 'Lekki, Lagos, Nigeria',
     description: 'Industrial space designed with architectural excellence, combining industrial and residential elements with modern comfort.',
