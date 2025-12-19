@@ -22,7 +22,7 @@ const Hero = () => {
   }, [images.length]);
 
   return (
-    <section className="bg-hero w-auto min-h-[410px] md:h-[600px] flex items-center text-white sm:bg-cover ratio:16/9 overflow-hidden" style={{
+    <section className="bg-hero min-h-[410px] md:h-[600px] flex items-center text-white sm:w-50 sm:bg-cover md:w-auto ratio:16/9 overflow-hidden" style={{
       backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('${images[currentIndex]}')`,
         backgroundRepeat: 'no-repeat',
         backgroundPosition: '50% 0%',
