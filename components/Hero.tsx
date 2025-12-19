@@ -56,15 +56,17 @@ const Hero = () => {
       backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('${images[currentIndex]}')`,
         backgroundRepeat: 'no-repeat',
         backgroundPosition: 'center center',
+        backgroundAttachment: isMobile ? 'scroll' : 'fixed',
         backgroundSize: 'cover',
-        transition: fade ? 'opacity 1s ease-in-out' : 'opacity 0.5s ease-in-out',
+        transition: fade ? 'background-image 1s ease-in-out, opacity 1s ease-in-out' : 'opacity 0.5s ease-in-out',
+        opacity: fade ? 1 : 0.7,
         position: 'relative',
     }}>
       {!isMobile && (
         <style jsx>{`
           @media (min-width: 768px) {
             .bg-hero {
-              background-attachment: fixed;
+              background-attachment: fixed !important;
             }
           }
         `}</style>
@@ -82,7 +84,7 @@ const Hero = () => {
                 PROJECTS<br/>
                 THAT DEFY<br/>
                 LIMITATIONS<br/>
-                <span id="spare-time">too much spare time?</span><br/>
+                <span id="spare-time">too much vaib!!!</span><br/>
               </span>
             </div>
           </h1>
