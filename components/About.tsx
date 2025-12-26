@@ -13,7 +13,7 @@ const About = () => {
         </div>
 
         <div data-aos="fade-left" className='md:mt-18 lg:h-full'>
-          <h2 className="text-sm font-bold text-purple-900 uppercase mb-2 lg:mt-10 xl:mt-27">Welcome Vaib</h2>
+          <h2 className="text-sm font-bold text-purple-900 uppercase mb-2 lg:mt-10 xl:mt-20">Welcome Vaib</h2>
           <h3 className="text-3xl md:text-4xl font-bold text-gray-800 mb-5">Vaib - Construction & Project Management Company</h3>
           <div className="flex wrap gap-3 mb-4">
             <div className="w-[100px]">
