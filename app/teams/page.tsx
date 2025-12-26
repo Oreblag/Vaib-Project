@@ -52,8 +52,8 @@ const teams = [
       
     },
     
-    name: "Engr. Oluwole Oni",
-    position: "Managing Director",
+    name: "Oluwole Oni",
+    position: "Co-Founder/Construction Manager",
     description:
       "A Talented and Goal Driven, target oriented executive with systematic approach and more than ten (10) years of Experience in Construction Management and International trade/Logistics management. He Possesses an excellent cross functional management skill including a superior grasp on technical areas of Building and civil engineering work.",
   },
@@ -63,10 +63,10 @@ const teams = [
       
     },
     
-    name: "Oluwasegun David Olawumi",
-    position: "Partner/Project Coordinator",
+    name: "Oluwasegun Olawumi",
+    position: "Co-Founder/Snr. Project Engineer",
     description:
-      "Segun Olawumi is a Civil Engineer with 9 years’ construction experience in building technology, earthworks, and construction management.Have been involved in remarkable sand dredging and land reclamation project around the world. Currently a Project Planner at PCL Construction, Winnipeg; and also a member of Engineers and Geoscientists Manitoba..",
+      "Segun Olawumi is a Civil Engineer with 9 years’ construction experience in building technology, earthworks, and construction management.Have been involved in remarkable sand dredging and land reclamation project around the world. Currently a Project Planner at PCL Construction, Winnipeg; and also a member of Engineers and Geoscientists Manitoba.",
   },
   {
     image: {
@@ -74,8 +74,8 @@ const teams = [
       
     },
     
-    name: "Solomon Oluwasegun Orepitan",
-    position: "Cost Analyst/Project Manager",
+    name: "Solomon Orepitan",
+    position: "Co-Founder/Project Manager/QS",
     description:
       "Quantity Surveyor and Certified Project Manager with nearly 10 years’ experience across consulting, construction, and banking sector, shows strong expertise in cost management, project delivery, and commercial leadership. University of Lagos graduate; full member of NIQS, MQSi, PMI, and Associate Member of RICS.",
   },
@@ -85,8 +85,19 @@ const teams = [
       
     },
     
-    name: "Engr. Coker Oladiran",
-    position: "Partner/Project Supervisor",
+    name: "Coker Oladiran",
+    position: "Co-Founder/Structural Engineer",
+    description:
+      "Passionate and Goal-driven individual with 9+ years’ of experience in construction management, techniques and international trade/logistics, with strong cross-functional leadership and technical expertise in building and civil engineering.",
+  },
+  {
+    image: {
+      src: "/images/user.png",
+      
+    },
+    
+    name: "Architect",
+    position: "Partner/Lead Project Architect",
     description:
       "Passionate and Goal-driven individual with 9+ years’ of experience in construction management, techniques and international trade/logistics, with strong cross-functional leadership and technical expertise in building and civil engineering.",
   },

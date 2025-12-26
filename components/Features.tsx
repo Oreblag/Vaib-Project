@@ -22,7 +22,7 @@ const Features = () => {
             <div className="">
               <h3 className="text-xl font-bold mb-2">Standard</h3>
               <p className="text-gray-600">
-                We ensure that all aspects of our operations comply with our clients standards as well as all Government rules and regulations affecting our business and operations.
+                We uphold the highest professional standards by ensuring full compliance with client requirements, industry best practices, and all applicable government laws and regulations across our operations.
               </p>
             </div>
           </div>
@@ -35,7 +35,7 @@ const Features = () => {
             <div className="">
               <h3 className="text-white text-xl font-bold mb-2">Quality</h3>
               <p className="text-gray-200">
-                We understand the Quality Assurance requirements of our clients and are totally committed to quality in completion and cost as primary objectives.
+                We are fully committed to delivering exceptional quality, with timely project completion and cost efficiency as our core objectives, consistently meeting and exceeding client expectations.
               </p>
             </div>
           </div>
@@ -48,7 +48,7 @@ const Features = () => {
             <div className="">
               <h3 className="text-md sm:text-xl font-bold mb-2">Environmental Protection & Sustainability</h3>
               <p className="text-gray-600">
-                We pay key attention to the protection of the environment during the course of our business and operations.
+                We are committed to responsible and sustainable operations, actively protecting the environment and minimizing environmental impact across all stages of our business activities.
               </p>
             </div>
           </div>

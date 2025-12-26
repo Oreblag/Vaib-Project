@@ -19,7 +19,7 @@ const services = [
     icon: <ArchitectIcon fill="#581c87" />,
     title: "Building Construction",
     description:
-      "We follow best practices in all our building projects. We can handle any kind of projects regardless of the size.",
+      "Quality Building and Construction. We follow best practices in all our building projects.",
   },
   {
     image: {
@@ -30,7 +30,7 @@ const services = [
     icon: <ContractorIcon fill="#581c87" />,
     title: "Architecture & Structural Designs",
     description:
-      "Production of working drawings for buildings, factories, office blocks, residential apartments, hotels...",
+      "Integrated design solutions. From concept to construction documents, we produce working drawings for buildings, residential apartments, commercial developments...",
   },
   {
     image: {
@@ -41,7 +41,7 @@ const services = [
     icon: <CraneIcon fill="#581c87" />,
     title: "Infrastructure & Civil Engineering",
     description:
-      "Our team of professionals are experts in designing and developing quality infrastructures and engineering works",
+      "Developing modern infrastructure. Our team of professionals are experts in designing and developing quality infrastructures and engineering works.",
   },
   {
     image: {
@@ -52,7 +52,7 @@ const services = [
     icon: <ArchitectIcon fill="#581c87" />,
     title: "Project Management",
     description:
-      "Our project management and project approach is second to none in the industry",
+      "Strategic project leadership, Precision project execution, Premium project delivery.",
   },
   {
     image: {
@@ -63,7 +63,7 @@ const services = [
     icon: <CraneIcon fill="#581c87" />,
     title: "General Supplies & Procurement",
     description:
-      "General Supplies and Procurement delivering quality products and efficient procurement solutions for construction and infrastructure projects and businesses across mutiple sectors",
+      "Integrated supply chain solutions. Delivering quality products and efficient procurement solutions for building construction, infrastructure projects and businesses across multiple sectors.",
   },
   {
     image: {
@@ -74,7 +74,7 @@ const services = [
     icon: <RealEstateIcon fill="#581c87" />,
     title: "Real Estates Development",
     description:
-      "We pride ourselves with our robust knowledge in the Real Estate sector to develop quality projects",
+      "Visionary real estate projects. We draw upon our extensive real estate sector knowledge to develop projects of exceptional quality.",
   },
 ];
 

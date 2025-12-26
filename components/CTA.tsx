@@ -11,9 +11,9 @@ const CTA = () => {
     useEffect(() => {
       const interval1 = setInterval(() => {
         setCount1(prevCount => {
-          if (prevCount >= 50) {
+          if (prevCount >= 25) {
             clearInterval(interval1);
-            return 50;
+            return 25;
           }
           return prevCount + 1;
         });
@@ -21,9 +21,9 @@ const CTA = () => {
 
       const interval2 = setInterval(() => {
         setCount2(prevCount => {
-          if (prevCount >= 25) {
+          if (prevCount >= 20) {
             clearInterval(interval2);
-            return 25;
+            return 20;
           }
           return prevCount + 1;
         });
@@ -39,14 +39,14 @@ const CTA = () => {
         className="cta-bg mb-8 md:bg-black bg-cover bg-center text-white relative overflow-hidden"
       >
         <div className="container mx-auto px-8 grid md:grid-cols-2 items-center overflow-hidden">
-          <div data-aos="fade-right" className="bg-black px-3 md:px-0 md:border-l-white md:border-l-2 py-20">
+          <div data-aos="fade-right" className="bg-black px-3 md:pl-0 md:pr-3 md:border-l-white md:border-l-2 py-20">
             <h2 className="text-sm font-bold uppercase mb-2 text-purple-900">Vaib Project Limited</h2>
-            <h3 className="text-3xl md:text-4xl font-bold mb-4">Best Provider for Construction Services</h3>
+            <h3 className="text-3xl md:text-4xl font-bold mb-4">Setting the Standard in Construction.</h3>
             <p className="mb-6 text-purple-900">
-              We pride ourselves in the delivery of industry standard projects. We follow international best practices to make this happen.
+              Where international best practices meet uncompromising local execution. We don't just build structures; we deliver industry-defining projects with precision and reliability.
             </p>
             <a href="#" className="text-white font-semibold">
-              Let's handle your next construction project!
+              Ready to build with the best? Let's talk.
             </a>
           </div>
           <div data-aos="fade-left" className="">

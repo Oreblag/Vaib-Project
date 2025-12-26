@@ -24,15 +24,15 @@ export const metadata: Metadata = {
     default: 'Vaib Project Limited | Quality Construction Solutions',
     template: '%s | Vaib Project Limited'
   },
-  description: 'Leading construction and engineering company delivering quality building solutions. Commercial, residential, and industrial construction services.',
+  description: 'A trusted construction and engineering company providing excellence-driven building solutions for commercial, residential, and industrial developments.',
   keywords: 'construction company, building contractors, engineering services, commercial construction, residential building, construction management',
   authors: [{ name: 'Vaib Project Limited' }],
   creator: 'Vaib Project Limited',
   publisher: 'Vaib Project Limited',
   formatDetection: {
-    email: false,
-    address: false,
-    telephone: false,
+    email: true,
+    address: true,
+    telephone: true,
   },
 };
 

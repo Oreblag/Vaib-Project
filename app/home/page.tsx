@@ -12,9 +12,9 @@ import Testimonials from "@/components/Testimonials";
 import Blog from "@/components/Blog";
 
 export const metadata: Metadata = {
-  title: "Home",
-  description: "Building Projects That Defy Limitations.",
-  keywords: "study abroad, international education, university applications, visa assistance, scholarships, student placement",
+  title: 'Home | Vaib Project Limited',
+  description: 'Delivering Reliable Projects Without Limits.',
+  keywords: 'construction company, building contractors, engineering services, commercial construction, residential building, construction management',
 };
 
 const Home = () => {

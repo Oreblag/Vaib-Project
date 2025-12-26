@@ -11,23 +11,23 @@ import { FaQuoteLeft } from "react-icons/fa";
 
 const testimonials = [
   {
-    quote: "Vaib Project Ltd has a great design team of architects and engineers. What you see them design is what you see them build to details. I see that as a fantastic quality.",
-    author: "Mr Dele Jayeoba",
-    company: "Founder, NewArk Communications Ltd",
+    quote: "Vaib Project Limited delivered exceptional procurement and supply services for our recent farm and storage facilities expansion. Their ability to source high-quality materials at competitive costs, coupled with reliable and timely delivery, kept our project on schedule and within budget. Their professionalism and attention to detail in supply chain management are truly commendable.",
+    author: "Mr Vijay Goyal",
+    company: "Senior Manager QA/QC, Atlantic Shrimpers Ltd.",
     image: "/images/user.png",
     icon: <FaQuoteLeft  />,
   },
+  // {
+  //   quote: "Vaib Project are good in design, material cost, engineering and quality delivery of project. We engaged the at Iroko close, Osborn offshore estate project for the designing and development of our real estate project and they delivered to quality.",
+  //   author: "Mr Ayo Odusanya",
+  //   company: "Founder, VCL Properties Ltd",
+  //   image: "/images/user.png",
+  //   icon: <FaQuoteLeft  />,
+  // },
   {
-    quote: "Vaib Project are good in design, material cost, engineering and quality delivery of project. We engaged the at Iroko close, Osborn offshore estate project for the designing and development of our real estate project and they delivered to quality.",
-    author: "Mr Ayo Odusanya",
-    company: "Founder, VCL Properties Ltd",
-    image: "/images/user.png",
-    icon: <FaQuoteLeft  />,
-  },
-  {
-    quote: "What I love about Vaib Project Ltd is the speed of their delivery and the quality of work. For the past 5 years of dealing with them, I had no reason to doubt their expertise.",
-    author: "Mr Sunday Egede",
-    company: "Co-founder, Prince-Ebeano Supermarket",
+    quote: "Vaib Project Limited managed the full scope of our phase 4 warehouse complex—from construction to material procurement and supply. Their team ensured seamless coordination, high-quality materials were delivered on schedule, and the final build exceeded our expectations in both finish and budget management. A truly reliable partner from start to finish.",
+    author: "Mr Majd",
+    company: "Director, Dalal Steel Ltd(Nigeria)",
     image: "/images/user.png",
     icon: <FaQuoteLeft  />,
   },

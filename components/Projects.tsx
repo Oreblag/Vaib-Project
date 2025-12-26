@@ -30,13 +30,13 @@ const projects = [
   },
   {
     image: {
-      src: "/images/project-lekki1.jpg"
+      src: "/images/pool-model.jpg"
     },
     category: 'Proposed Building',
-    title: 'Residential Building Model',
+    title: 'Swimming Area Model',
     icon: <MapPin size={15} fill='#581c87'/>,
     location: 'Lekki, Lagos State, Nigeria',
-    description: 'Residential building with modern design, efficient space planning, and customer-friendly layout in construction.',
+    description: 'Residential building with modern swimming pool design, efficient space planning, and customer-friendly layout in construction.',
     credit: 'Vaib Project Limited'
   },
   {
@@ -57,7 +57,7 @@ const projects = [
     category: 'Supermarket',
     title: 'Royal Prince Supermarket',
     icon: <MapPin size={15} fill='#581c87'/>,
-    location: 'Lekki, Lagos, Nigeria',
+    location: 'Gbagada, Lagos, Nigeria',
     description: 'Contemporary retail space designed for optimal customer flow and product display with emphasis on shopper experience.',
     credit: 'In Partnership with ONTOP BUILDERS LTD'
   },

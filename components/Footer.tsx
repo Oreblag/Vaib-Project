@@ -9,7 +9,7 @@ const Footer = () => {
       <div className="container mx-auto px-8 pt-10 grid md:grid-cols-2 lg:grid-cols-4 gap-8 md:gap-20 overflow-hidden">
         <div className='mb-8'>
           <h4 className="text-white font-bold text-lg mb-8 uppercase">About</h4>
-          <p className="mb-8">We deliver construction projects that defy all limitations.</p>
+          <p className="mb-8">We deliver reliable projects without limits.</p>
           <div className="flex space-x-4">
             <a href="#" className="text-gray-400 hover:text-white h-15 rounded-[50%] p-4 text-center bg-zinc-700 cursor-pointer"><Facebook /></a>
             <a href="#" className="text-gray-400 hover:text-white h-15 rounded-[50%] p-4 text-center bg-zinc-700 cursor-pointer"><Twitter /></a>
@@ -45,7 +45,7 @@ const Footer = () => {
             </li>
             <li className="flex items-center mb-5">
               <Phone className="mr-3" />
-              <a href="tel:+2347036215972" className="hover:text-white">+234 703 621 5972</a>
+              <a href="tel:+2348132684206" className="hover:text-white">+234 813 268 4206</a>
             </li>
             <li className="flex items-center">
               <Mail className="mr-3" />

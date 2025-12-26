@@ -10,8 +10,10 @@ const Hero = () => {
   const [fade, setFade] = useState(true);
 
   const images = [
+    '/images/pool-model.jpg',
     '/images/project-lekki2.jpg',
     '/images/building-cons4.jpg',
+    '/images/building-model.jpg',
     '/images/project-4.jpg',
     '/images/project-lekki1.jpg',
     '/images/building-cons2.jpg',
@@ -78,13 +80,13 @@ const Hero = () => {
         </h1> */}
 
         <div className="main-text">
-          <h1 className="main-header text-3xl/[33px] lg:text-6xl font-extrabold uppercase">WE BUILD RELIABLE 
+          <h1 className="main-header text-3xl/[33px] lg:text-6xl font-extrabold uppercase">DELIVERING RELIABLE 
             <div className="roller mt-3">
               <span id="rolltext">
                 PROJECTS<br/>
-                THAT DEFY<br/>
-                LIMITATIONS<br/>
-                <span id="spare-time">too much vaib!!!</span><br/>
+                WITHOUT<br/>
+                LIMITS<br/>
+                {/* <span id="spare-time">too much vaib!!!</span><br/> */}
               </span>
             </div>
           </h1>
@@ -92,7 +94,7 @@ const Hero = () => {
         </div>
 
         <p className="mt-5 text-md md:text-lg max-w-2xl mx-auto md:mx-0 text-zinc-300">
-          We have considerable experience in delivering outstanding services in Real Estate Development, Civil Engineering Services and Engineering Project Management.
+          We bring extensive experience in real estate development, civil engineering and engineering project management.
         </p>
         <div className="mt-8 flex flex-col md:flex-row gap-2">
           <Button className="bg-purple-900 w-40 md:w-auto h-9 text-white font-bold rounded-md uppercase px-8 py-3 cursor-pointer hover:bg-white hover:text-purple-900">
